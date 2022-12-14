@@ -1,0 +1,49 @@
+.orderbooks {
+  max-width: 800px;
+  background-color: #172d3e;
+  color: #fff;
+}
+
+.orderbooks__header {
+  line-height: 32px;
+  font-size: 0.9rem;
+  padding: 0 32px;
+  border-bottom: 1px solid gray;
+}
+
+.orderbooks__columns {
+  display: flex;
+  min-height: 450px;
+}
+
+.orderbooks__list {
+  width: 50%;
+  text-align: center;
+}
+
+.orderbooks__list__header {
+  display: flex;
+  line-height: 25px;
+}
+
+.orderbooks__list__header > * {
+  flex: 1;
+}
+
+.orderbooks__row {
+  line-height: 17px;
+  display: flex;
+}
+
+.orderbooks__row.hidden {
+  display: none;
+}
+
+.orderbooks__row > * {
+  flex: 1;
+}
+
+.orderbooks__list--right .orderbooks__list__header,
+.orderbooks__list--right .orderbooks__row {
+  flex-direction: row-reverse;
+}

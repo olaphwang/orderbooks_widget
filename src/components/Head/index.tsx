@@ -6,10 +6,12 @@ type HeadProps = {
   description?: string
 }
 
-export const Head = ({ title = '', description = '' }: HeadProps = {}) => {
+function Head({ title = '', description = '' }: HeadProps = {}) {
   return (
     <Helmet title={title} defaultTitle='React Starter'>
       <meta name='description' content={description} />
     </Helmet>
   )
 }
+
+export default Head
